@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Navigator</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<header id="header">
+  <div id="header-icon">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="14" y2="12"/><line x1="4" y1="18" x2="18" y2="18"/></svg>
+  </div>
+  <div id="header-text">
+    <div id="header-title">Claude Navigator</div>
+    <div id="header-sub">v3.6</div>
+  </div>
+</header>
+
+<section id="shortcuts">
+  <div class="shortcut-group-title">Keyboard</div>
+  <div class="shortcut-row"><span><kbd>Alt</kbd><kbd>Shift</kbd><kbd>N</kbd></span><span>Show / hide sidebar</span></div>
+  <div class="shortcut-row"><span><kbd>/</kbd></span><span>Search messages</span></div>
+  <div class="shortcut-row"><span><kbd>↑</kbd><kbd>↓</kbd><kbd>Enter</kbd></span><span>Move and jump</span></div>
+  <div class="shortcut-row"><span><kbd>Esc</kbd></span><span>Clear search / close</span></div>
+  <div class="shortcut-group-title" id="mouse-title">Sidebar</div>
+  <div class="shortcut-row"><span class="action-badge">Click message</span><span>Jump and highlight</span></div>
+  <div class="shortcut-row"><span class="action-badge">Eye icon</span><span>Show message · tap again to hide</span></div>
+  <div class="shortcut-row"><span class="action-badge">Gear icon</span><span>Scroll speed, export</span></div>
+</section>
+
+<div id="open-btn-wrap">
+  <button id="open-claude-btn">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    Open claude.ai
+  </button>
+</div>
+
+<div id="saved-header">
+  <span>Recent conversations</span>
+  <span id="conv-count"></span>
+</div>
+
+<div id="conv-list"></div>
+
+<footer id="footer"><span>Active on claude.ai only</span></footer>
+
+<script src="popup.js"></script>
+</body>
+</html>
