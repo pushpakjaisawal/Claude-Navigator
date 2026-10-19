@@ -13,7 +13,7 @@ even when claude.ai has only a handful of messages loaded on the page.
 ![Dependencies](https://img.shields.io/badge/dependencies-0-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-<!-- demo.gif -->
+![Claude Navigator demo](docs/screenshots/demo.gif)
 
 </div>
 
